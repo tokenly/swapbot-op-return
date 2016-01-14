@@ -15,7 +15,7 @@ class Decoder
     /**
      * Decodes OP_RETURN data to trigger an alternate swapbot receipt destination
      * returns an array of the operation and the base58 encoded bitcoin address on success
-     * @param  string $op_return_string the hexadecimal encoded 
+     * @param  string $op_return_string the hexadecimal encoded OP_RETURN value
      * @return mixed null if not a valid OP_RETURN or an array of ['operation' => 'destination, 'address' => $address_string] on success
      */
     public function decodeInstruction($raw_op_return_string) {

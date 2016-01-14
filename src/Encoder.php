@@ -14,7 +14,7 @@ class Encoder
     /**
      * builds the OP_RETURN data to trigger an alternate swapbot receipt destination
      * @param  string $bitcoin_address a base58 encoded bitcoin address
-     * @return string a hexadecimal representation of the OP_RETURN instruction
+     * @return string a hexadecimal representation of the OP_RETURN value
      */
     public function buildDestinationInstruction($bitcoin_address) {
         $address_converter = new AddressConverter();
